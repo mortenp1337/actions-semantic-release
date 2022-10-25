@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   release:
-    name: Release Greeting
+    name: Release
     runs-on: ubuntu-latest
       env:
         working-directory: ./greeting-action
@@ -23,9 +23,12 @@ jobs:
           node-version: '16'
       - name: Install dependencies
         run: npm ci
+        working-directory: ${{ env.working-directory }}
       - name: Build
         run: npm run build
+        working-directory: ${{ env.working-directory }}
       - name: Semantic Release
         run: npx semantic-release
+        working-directory: ${{ env.working-directory }}
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

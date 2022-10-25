@@ -15,8 +15,11 @@ jobs:
         with:
           node-version: 16
       - run: npm install
+        working-directory: ${{ env.working-directory }}
       - run: npm run build
+        working-directory: ${{ env.working-directory }}
       - run: rm -rf node_modules
+        working-directory: ${{ env.working-directory }}
       - uses: ./greeting-action
       - uses: ./greeting-action
         with:
