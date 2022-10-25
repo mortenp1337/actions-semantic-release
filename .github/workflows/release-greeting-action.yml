@@ -11,9 +11,10 @@ permissions:
 
 jobs:
   release:
-    name: Release
+    name: Release Greeting
     runs-on: ubuntu-latest
-    working-directory: ./greeting-action
+      env:
+        working-directory: ./greeting-action
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 16.x

@@ -7,7 +7,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    working-directory: ./greeting-action
+    env:
+      working-directory: ./greeting-action
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
