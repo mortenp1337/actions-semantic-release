@@ -1,7 +1,7 @@
 {
-  "name": "daves-demo-action",
+  "name": "actions-semantic-release",
   "version": "1.0.0",
-  "description": "Repository for my YouTube Video Series on how to create and released actions.",
+  "description": "repository used to test semantic-release, based on https://github.com/davelosert/daves-demo-action",
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && node esbuild.cjs",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davelosert/daves-demo-action.git"
+    "url": "git+https://github.com/mortenp1337/actions-semantic-release.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/davelosert/daves-demo-action/issues"
+    "url": "https://github.com/mortenp1337/actions-semantic-release/issues"
   },
-  "homepage": "https://github.com/davelosert/daves-demo-action#readme",
+  "homepage": "https://github.com/mortenp1337/actions-semantic-release#readme",
   "dependencies": {
     "@actions/core": "1.9.1"
   },
