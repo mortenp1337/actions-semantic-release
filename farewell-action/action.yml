@@ -1,0 +1,10 @@
+name: Farewell action
+description: Farewell persons
+inputs:
+  person:
+    description: The person to Farewell
+    required: true
+    default: 'Monalisa Octocat'
+runs:
+ using: node16
+ main: dist/index.js
