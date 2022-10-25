@@ -1,5 +1,5 @@
 {
-  "name": "actions-semantic-release",
+  "name": "greeting-action",
   "version": "1.0.0",
   "description": "repository used to test semantic-release, based on https://github.com/davelosert/daves-demo-action",
   "main": "index.js",
