@@ -1,4 +1,4 @@
-name: Daves Action Demo
+name: Greeting action
 description: Greet persons
 inputs:
   person:

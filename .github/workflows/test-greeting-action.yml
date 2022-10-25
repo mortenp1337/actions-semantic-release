@@ -1,4 +1,4 @@
-name: Test Action
+name: Test greeting action
 
 on:
   pull_request:
@@ -15,7 +15,7 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: rm -rf node_modules
-      - uses: ./
-      - uses: ./
+      - uses: ./greeting-action
+      - uses: ./greeting-action
         with:
           person: Batman
