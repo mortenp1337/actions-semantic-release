@@ -1,3 +1,6 @@
-# daves-demo-action
+# Semantic release of multiple actions
+this work is based on: https://github.com/davelosert/daves-demo-action
 
-Repository for my YouTube Video Series on how to create and released actions.
+## Resources
+https://github.com/semantic-release/semantic-release
+https://github.com/pmowrer/semantic-release-monorepo
