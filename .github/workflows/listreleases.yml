@@ -11,8 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2      
       - name: Retrieve releases and generate report
-        env:
-          GH_TOKEN: $GITHUB_TOKEN
         run: |
           releases=$(gh release list -L 40 --exclude-drafts)
           
