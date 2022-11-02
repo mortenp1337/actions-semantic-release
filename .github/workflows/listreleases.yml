@@ -7,7 +7,9 @@ jobs:
   create-list:
     name: Create list of releases
     runs-on: ubuntu-latest   
-    steps:      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2      
       - name: Retrieve releases and generate report
         env:
           GH_TOKEN: $
